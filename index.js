@@ -1,14 +1,15 @@
-let cabeceraMenu=document.querySelector("#cabeceraMenu")
 let fraseDia=document.querySelector("#fraseDia")
+let cabeceraMenu=document.querySelector("#cabeceraMenu")
 let selectorDia=document.querySelector("#selectorDia")
 
-function frasesDia (){
-    fraseDia.innerHTML=fraseDia.value
-}
-cabeceraMenu.addEventListener("input", frasesDia)
+console.log(fraseDia.value)
 
-function seleccionarDia (){
-    fraseDia.innerHTML=selectorDia.value
+function escribir(){
+    cabeceraMenu.innerHTML=fraseDia.value
 }
-fraseDia.addEventListener("change", seleccionarDia)
+fraseDia.addEventListener("input", escribir)
 
+function elegir(){
+    cabeceraMenu.innerHTML=selectorDia.value
+}
+fraseDia.addEventListener("change", elegir)
